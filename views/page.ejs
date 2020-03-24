@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo app</title>
+    <!-- <script src="public\libraries\jquery-3.4.1.js"></script> -->
+
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="public/styles.css" />
+  </head>
+
+  <body>
+    <div class="container-fluid wrapper" >
+      <div class="row">
+        <div class="col-8">
+          <input
+            id="text-entered"
+            type="text"
+            placeholder="what will you do ?"
+          />
+          <button class="btn btn-primary" id="addBtn">ADD</button>
+          <!-- <button id="deleteBtn">DELETE</button> -->
+          <div class="container">
+            <ul id="list1"></ul>
+          </div>
+        </div>
+        <div class="col-4">
+          <a href="/authPage" id="link-newUser">New User ?</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-8"></div>
+        <div class="col-4">
+          <label for="username">USERNAME</label>
+          <input
+            type="text"
+            name="username"
+            id="username"
+            list="users"
+            value="<%=username %>"
+          />
+          <datalist id="users">
+            <option value="<%=username %>"></option>
+          </datalist>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="public\scripts.js"></script>

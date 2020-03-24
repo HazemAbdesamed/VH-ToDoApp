@@ -1,0 +1,33 @@
+body {
+  background-color: #fffa65;
+}
+
+ul {
+  max-width: 70%;
+}
+li {
+  background-color: #2ecc73;
+  opacity: 0.8;
+  border: solid 2px;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 6px
+}
+li:hover {
+  opacity: 1;
+  background-color: green;  
+}
+.item-buttons{
+display: inline-block;}
+
+.ceneterThings {
+  margin-right: auto;
+  margin-left: auto;
+}
+#body-page-auth {
+  background-image: url("haha.jpg");
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
